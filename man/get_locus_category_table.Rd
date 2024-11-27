@@ -4,7 +4,7 @@
 \alias{get_locus_category_table}
 \title{Retrieves the Locus Category table}
 \usage{
-get_locus_category_table(locus)
+get_locus_category_table(return_raw_data = FALSE)
 }
 \arguments{
 \item{return_raw_data}{When \code{FALSE} (default), a selection of variables will be returned consistent with the web interface. When \code{TRUE}, all raw data available through the API will be returned.}

@@ -3,6 +3,7 @@
 export(get_endpoint)
 export(get_endpoint_JSON)
 export(get_locus_category_table)
+export(get_locus_chromosome_location_and_allele_reference_table)
 export(get_locus_information)
 export(get_locus_sequences_table)
 export(get_locus_variant_alleles_table)
