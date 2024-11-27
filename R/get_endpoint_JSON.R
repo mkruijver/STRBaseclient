@@ -39,7 +39,9 @@ get_endpoint_JSON <- function(endpoint, params = list()) {
   }
 
   # get JSON response as text
-  content <- httr::content(response, as = "text", type = "application/json")
+  content <- httr::content(response, as = "text",
+                           type = "application/json",
+                           encoding = "UTF-8")
 
   return(content)
 }
