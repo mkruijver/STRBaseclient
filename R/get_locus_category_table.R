@@ -23,19 +23,18 @@ get_locus_category_table <- function(return_raw_data = FALSE) {
   }
   else{
 
-    lac_dt <- data.table(lac)
-
     # filter only the relevant loci shown in the web UI
-    lac_dt_active <- lac_dt[loci.recordStatus == 1]
+    idx <- lac$loci.recordStatus == 1 & lac$locialias.isPrimary
 
-    # extract relevant columns
-    lac_dt_active_relevant_cols <- lac_dt_active[locialias.isPrimary==TRUE,
-                                                 .(locusCategory = category.categoryLabel, locus = locialias.aliasText),
-                                                 .(lociId = loci.lociId)]
+    lac_df <- data.frame(lociId = lac$loci.lociId[idx],
+               locusCategory = lac$category.categoryLabel[idx],
+               locus = lac$locialias.aliasText[idx])
 
     # sort as in web UI
-    return(as.data.frame(lac_dt_active_relevant_cols[order(locusCategory, locus)]))
-  }
+    lac_df_ordered <- lac_df[order(lac_df$locusCategory, lac_df$locus),]
+    rownames(lac_df_ordered) <- NULL
 
+    return(lac_df_ordered)
+  }
 
 }

@@ -26,18 +26,17 @@ get_locus_variant_alleles_table <- function(locus) {
   # ensure allele call is character
   df$alleleCall <- as.character(df$alleleCall)
 
-  # order alleles from small to large by numeric order
-  df_o <- order(as.numeric(ifelse(df$alleleCall == "0", "-1", df$alleleCall)))
+  tabulated <- table(df$alleleCall)
+
+  alleleCalls <- names(tabulated)
+  alleleCalls_count <- as.vector(tabulated)
+
+  # determine order to provide ordered return value
+  alleleCalls_order <- order(as.numeric(alleleCalls))
 
   # replace 0 like the web UI
-  df$alleleCall[df$alleleCall == "0"] <- "Greater or Less Than"
+  alleleCalls[alleleCalls == "0"] <- "Greater or Less Than"
 
-  # convert to data.table and query
-  dt <- data.table::as.data.table(df[df_o,])
-
-  dt_queried <- as.data.frame(dt[,
-                                 .(numberOfVariantAlleleRecords = .N),
-                                 alleleCall])
-
-  dt_queried
+  return(data.frame(alleleCall = alleleCalls[alleleCalls_order],
+             numberOfVariantAlleleRecords = alleleCalls_count[alleleCalls_order]))
 }

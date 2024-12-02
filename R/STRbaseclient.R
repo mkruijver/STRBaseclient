@@ -13,7 +13,6 @@ STRBASE_URL <- "https://strbase.nist.gov/"
 #' @name STRbaseclient-package
 #' @aliases STRbaseclient-package
 #' @importFrom stats rnorm
-#' @import data.table
 #'
 #' @seealso
 #' \itemize{
