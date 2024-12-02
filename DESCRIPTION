@@ -5,7 +5,7 @@ Authors@R:
     person("Maarten", "Kruijver", , "maarten.kruijver@esr.cri.nz", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-6890-7632"))
 Description: NIST's STRBase hosts STR-related information for the human identity community. Data can be browsed through "https://strbase.nist.gov/". This client accesses the API directly.  
-License: MIT
+License: MIT + file LICENSE.md
 URL: https://github.com/mkruijver/STRbaseclient
 BugReports: https://github.com/mkruijver/STRbaseclient/issues
 Encoding: UTF-8
