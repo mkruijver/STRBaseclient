@@ -2,10 +2,16 @@
 % Please edit documentation in R/STRbaseclient.R
 \docType{package}
 \name{STRbaseclient-package}
+\alias{STRbaseclient}
 \alias{STRbaseclient-package}
 \title{STRbaseclient: Access NIST's STRbase API}
 \description{
 NIST's STRBase hosts STR-related information for the human identity community. Data can be browsed through "https://strbase.nist.gov/". This client accesses the API directly.
+
+Access NIST's STRbase API.
+}
+\details{
+NIST's STRBase hosts STR-related information for the human identity community. Data can be browsed through "https://strbase.nist.gov/". This client accesses the API directly. This makes it easy to use the data from STRbase in your own analyses.
 }
 \seealso{
 Useful links:
@@ -14,6 +20,10 @@ Useful links:
   \item Report bugs at \url{https://github.com/mkruijver/STRbaseclient/issues}
 }
 
+
+\itemize{
+\item \url{https://strbase.nist.gov} for the STRbase website.
+}
 }
 \author{
 \strong{Maintainer}: Maarten Kruijver \email{maarten.kruijver@esr.cri.nz} (\href{https://orcid.org/0000-0002-6890-7632}{ORCID})

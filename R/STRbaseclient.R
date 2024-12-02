@@ -10,7 +10,7 @@ STRBASE_URL <- "https://strbase.nist.gov/"
 #'
 #'  NIST's STRBase hosts STR-related information for the human identity community. Data can be browsed through "https://strbase.nist.gov/". This client accesses the API directly. This makes it easy to use the data from STRbase in your own analyses.
 #'
-#' @name STRbaseclient
+#' @name STRbaseclient-package
 #' @aliases STRbaseclient-package
 #' @importFrom stats rnorm
 #' @import data.table
