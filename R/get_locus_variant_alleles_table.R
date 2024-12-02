@@ -1,6 +1,6 @@
 #' Retrieves the Variant Alleles table for a locus
 #'
-#' The `get_locus_variant_alleles_table` function queries the STRbase API and retrieves the Variant Alleles table for a locus.
+#' The `get_locus_variant_alleles_table` function queries the STRBase API and retrieves the Variant Alleles table for a locus.
 #'
 #' @param locus The specific locus. For example `"FGA"`.
 #' @return A DataFrame.

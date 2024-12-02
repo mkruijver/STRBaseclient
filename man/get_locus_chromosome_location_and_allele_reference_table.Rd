@@ -19,7 +19,7 @@ get_locus_chromosome_location_and_allele_reference_table(
 A DataFrame.
 }
 \description{
-The \code{get_locus_chromosome_location_and_allele_reference_table} function queries the STRbase API and retrieves the Chromsome Location and Allele Reference table for a locus.
+The \code{get_locus_chromosome_location_and_allele_reference_table} function queries the STRBase API and retrieves the Chromsome Location and Allele Reference table for a locus.
 }
 \examples{
 \dontrun{

@@ -1,6 +1,6 @@
 #' Queries an Endpoint
 #'
-#' The `get_endpoint` function queries a STRbase API endpoint and retrieves data.
+#' The `get_endpoint` function queries a STRBase API endpoint and retrieves data.
 #'
 #' @param endpoint The specific endpoint to query. For example `"Loci"`.
 #' @param params A named list of query parameters to include in the request.

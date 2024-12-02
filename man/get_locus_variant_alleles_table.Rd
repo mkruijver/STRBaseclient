@@ -13,7 +13,7 @@ get_locus_variant_alleles_table(locus)
 A DataFrame.
 }
 \description{
-The \code{get_locus_variant_alleles_table} function queries the STRbase API and retrieves the Variant Alleles table for a locus.
+The \code{get_locus_variant_alleles_table} function queries the STRBase API and retrieves the Variant Alleles table for a locus.
 }
 \examples{
 \dontrun{

@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(STRbaseclient)
+library(STRBaseclient)
 
-test_check("STRbaseclient")
+test_check("STRBaseclient")

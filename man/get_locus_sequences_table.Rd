@@ -15,7 +15,7 @@ get_locus_sequences_table(locus, return_raw_data = FALSE)
 A DataFrame.
 }
 \description{
-The \code{get_locus_sequences_table} function queries the STRbase API and retrieves the Variant Alleles table for a locus.
+The \code{get_locus_sequences_table} function queries the STRBase API and retrieves the Variant Alleles table for a locus.
 }
 \examples{
 \dontrun{

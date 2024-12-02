@@ -15,7 +15,7 @@ get_locus_kits_table(locus, return_raw_data = FALSE)
 A DataFrame.
 }
 \description{
-The \code{get_locus_kits_table} function queries the STRbase API and retrieves the Locus Kits table.
+The \code{get_locus_kits_table} function queries the STRBase API and retrieves the Locus Kits table.
 }
 \examples{
 \dontrun{

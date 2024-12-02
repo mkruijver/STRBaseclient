@@ -1,6 +1,6 @@
 #' Retrieves the Locus Category table
 #'
-#' The `get_locus_category_table` function queries the STRbase API and retrieves the Locus Category table.
+#' The `get_locus_category_table` function queries the STRBase API and retrieves the Locus Category table.
 #'
 #' @param return_raw_data When `FALSE` (default), a selection of variables will be returned consistent with the web interface. When `TRUE`, all raw data available through the API will be returned.
 #' @return A DataFrame.

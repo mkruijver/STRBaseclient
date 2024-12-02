@@ -13,7 +13,7 @@ get_locus_category_table(return_raw_data = FALSE)
 A DataFrame.
 }
 \description{
-The \code{get_locus_category_table} function queries the STRbase API and retrieves the Locus Category table.
+The \code{get_locus_category_table} function queries the STRBase API and retrieves the Locus Category table.
 }
 \examples{
 \dontrun{

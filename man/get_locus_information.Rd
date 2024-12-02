@@ -13,7 +13,7 @@ get_locus_information(locus)
 A List.
 }
 \description{
-The \code{get_locus_information} function queries the STRbase API and retrieves basic information for a locus. This includes the \code{lociId} which can be used when querying other endpoints.
+The \code{get_locus_information} function queries the STRBase API and retrieves basic information for a locus. This includes the \code{lociId} which can be used when querying other endpoints.
 }
 \examples{
 \dontrun{

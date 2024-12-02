@@ -1,39 +1,39 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# STRbaseclient
+# STRBaseclient
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-STRbaseclient is an R-package for accessing
-[NIST](https://www.nist.gov/)’s [STRbase](https://strbase.nist.gov/)
-API. STRbase hosts information about Short Tandem Repeats (STRs)
+STRBaseclient is an R-package for accessing
+[NIST](https://www.nist.gov/)’s [STRBase](https://strbase.nist.gov/)
+API. STRBase hosts information about Short Tandem Repeats (STRs)
 relevant to the human identity community. Resources include STR general
 information, observations of variant alleles by the forensic community,
 STR typing kits, and population data among other topics. See
-[Introduction to STRbase](https://strbase.nist.gov/Others/Intro) for
+[Introduction to STRBase](https://strbase.nist.gov/Others/Intro) for
 more information.
 
-Note that the author of STRbaseclient is not affiliated with NIST.
+Note that the author of STRBaseclient is not affiliated with NIST.
 
 ## Installation
 
-You can install the development version of STRbaseclient from
+You can install the development version of STRBaseclient from
 [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("mkruijver/STRbaseclient")
+devtools::install_github("mkruijver/STRBaseclient")
 ```
 
 ## Usage
 
 First we pull a list of loci, similar to the left-hand side of the
-landing page of STRbase:
+landing page of STRBase:
 
 ``` r
-library(STRbaseclient)
+library(STRBaseclient)
 
 locus_category_table <- get_locus_category_table()
 head(locus_category_table)
@@ -96,7 +96,7 @@ get_locus_chromosome_location_and_allele_reference_table("CSF1PO")
 ## Advanced usage
 
 The *get\_…* functions return DataFrames with roughly the same
-information as the STRbase website. The API often returns a richer
+information as the STRBase website. The API often returns a richer
 dataset which can be inspected when calling a function with the
 *return_raw_data* argument set to *TRUE*. For example:
 

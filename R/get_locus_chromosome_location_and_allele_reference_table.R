@@ -1,6 +1,6 @@
 #' Retrieves the Chromosome Location and Allele Reference table for a locus
 #'
-#' The `get_locus_chromosome_location_and_allele_reference_table` function queries the STRbase API and retrieves the Chromsome Location and Allele Reference table for a locus.
+#' The `get_locus_chromosome_location_and_allele_reference_table` function queries the STRBase API and retrieves the Chromsome Location and Allele Reference table for a locus.
 #'
 #' @param locus The specific locus. For example `"vWA"`.
 #' @param return_raw_data When `FALSE` (default), a selection of variables will be returned consistent with the web interface. When `TRUE`, all raw data available through the API will be returned.

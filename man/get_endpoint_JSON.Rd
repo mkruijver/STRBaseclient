@@ -15,7 +15,7 @@ get_endpoint_JSON(endpoint, params = list())
 A character vector of length 1.
 }
 \description{
-The \code{get_endpoint} function queries a STRbase API endpoint and retrieves data.
+The \code{get_endpoint} function queries a STRBase API endpoint and retrieves data.
 }
 \examples{
 \dontrun{

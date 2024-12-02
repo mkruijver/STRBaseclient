@@ -15,7 +15,7 @@ get_locus_tri_alleles_table(locus, return_raw_data = FALSE)
 A DataFrame.
 }
 \description{
-The \code{get_locus_tri_alleles_table} function queries the STRbase API and retrieves the Locus Tri-alleles table.
+The \code{get_locus_tri_alleles_table} function queries the STRBase API and retrieves the Locus Tri-alleles table.
 }
 \examples{
 \dontrun{

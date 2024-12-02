@@ -1,6 +1,6 @@
 #' Retrieves the Locus Tri-alleles table
 #'
-#' The `get_locus_tri_alleles_table` function queries the STRbase API and retrieves the Locus Tri-alleles table.
+#' The `get_locus_tri_alleles_table` function queries the STRBase API and retrieves the Locus Tri-alleles table.
 #'
 #' @param locus The specific locus. For example `"FGA"`.
 #' @param return_raw_data When `FALSE` (default), a selection of variables will be returned consistent with the web interface. When `TRUE`, all raw data available through the API will be returned.
@@ -60,7 +60,7 @@ get_locus_tri_alleles_table <- function(locus, return_raw_data = FALSE) {
                       amplificationKit = ta$trialleles.kit.kitLabel,
                       instrument = ta$trialleles.instruments.label,
                       submittedDate = ta$trialleles.submitDate,
-                      imageURL = get_STRbase_url(ta$trialleles.imageFileName)))
+                      imageURL = get_STRBase_url(ta$trialleles.imageFileName)))
   }
 }
 NULL

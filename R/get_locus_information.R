@@ -1,6 +1,6 @@
 #' Retrieves Basic Information for a locus
 #'
-#' The `get_locus_information` function queries the STRbase API and retrieves basic information for a locus. This includes the `lociId` which can be used when querying other endpoints.
+#' The `get_locus_information` function queries the STRBase API and retrieves basic information for a locus. This includes the `lociId` which can be used when querying other endpoints.
 #'
 #' @param locus The specific locus. For example `"FGA"`.
 #' @return A List.
