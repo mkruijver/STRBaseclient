@@ -1,4 +1,5 @@
 API_BASE_URL <- "https://strbase.nist.gov/api/"
+STRBASE_URL <- "https://strbase.nist.gov/"
 
 #' @keywords internal
 "_PACKAGE"
